@@ -3,11 +3,11 @@ kind: Pod
 metadata:
   name: labels
   labels:
-    name: roboshop
+    project: roboshop
     environment: dev
     component: mysql
     tier: backend
 spec:
   containers:
   - name: nginx
-  - image: nginx
+    image: nginx
