@@ -20,7 +20,7 @@ ports:
 apiVersion: v1
 kin: Pod
 metadata:
-  name: nginx_np
+  name: nginx-np
   labels:
     purpose: service-np-demo
     project: roboshop
