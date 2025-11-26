@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap
+  labels:
+    purpose: config
+    env: dev
+data:
+  course: "devops with aws"
+  duration: "depends"
+  trainer: "myself"
