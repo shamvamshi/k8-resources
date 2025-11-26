@@ -10,7 +10,7 @@ spec:
     purpose: service-np-demo
     project: roboshop
     environment: dev
-ports:
+  ports:
   - protocol: TCP
     port: 80 # service port
     targetPort: 80 # container port
