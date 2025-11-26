@@ -18,7 +18,7 @@ spec:
 ---
 
 apiVersion: v1
-kin: Pod
+kind: Pod
 metadata:
   name: nginx-np
   labels:
