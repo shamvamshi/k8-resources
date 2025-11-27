@@ -2,17 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
+  # deployment labels
   labels:
     purpose: deployment-demo
     project: roboshop
     app: nginx
 spec:
   replicas: 2
+    # these are the labels replicaset uses to create pod replicas, this should match pod labels
   selector:
     matchLabels:
       purpose: deployment-demo
       project: roboshop
       app: nginx
+  # this is pod definition
   template:
     metadata:
       labels:
@@ -22,4 +25,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: nginx:latest # here u should change the version, so the pod in replicaset takes the version
