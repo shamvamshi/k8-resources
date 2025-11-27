@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx
+  labels:
+    purpose: replicaset-demo
+    project: roboshop
+    app: nginx
+spec:
+  # these are the labels replicaset uses to create pod replicas, this should match pod labels
+  replicas: 3
+  selector:
+    matchLabels:
+      purpose: replicaset-demo
+      project: roboshop
+      app: nginx
+  template:
+    metadata:
+      labels:
+        purpose: replicaset-demo
+        project: roboshop
+        app: nginx
+    spec:
+        containers:
+        - name: nginx
+          image: nginx
