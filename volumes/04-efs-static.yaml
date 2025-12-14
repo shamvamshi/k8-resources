@@ -10,7 +10,7 @@ spec:
   storageClassName: "" # this should be empty in static provisioning
   persistentVolumeReclaimPolicy: Retain
   csi:
-    driver: ebs.csi.aws.com
+    driver: efs.csi.aws.com
     volumeHandle: fs-0dd7f10a842309701
 ---
 apiVersion: v1
