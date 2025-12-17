@@ -6,7 +6,6 @@ spec:
   accessModes:
     - ReadWriteOnce
   storageClassName: "efs-roboshop"
-  # persistentVolumeReclaimPolicy: Retain
   resources:
     requests:
       storage: 5Gi
