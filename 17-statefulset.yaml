@@ -29,8 +29,8 @@ spec:
   - port: 80
     name: web
 ---
-apiVersion: v1
-kind: statefulset
+apiVersion: apps/v1
+kind: StatefulSet
 metadata:
   name: sc-headless
   labels:
